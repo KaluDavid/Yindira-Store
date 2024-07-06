@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&display=swap");
+
+// COLORS
+$darkBlue: #012850;
+$white: #ffffff;
+$gray: linear-gradient(178.51deg, #ddd8d5 69.44%, #e2e0e1 91.41%);
+
+// FONTS
+$Rancho: " 'Rancho', cursive";
+$Poppins: " 'Poppins', sans-serif";
+
+// FlexItem
+@mixin flexItem {
+  display: flex;
+  align-items: center;
+}
+
+// HEADER STYLE
+
+// lOGO STYLE
+@mixin logoStyle {
+  font-family: $Rancho;
+  color: $darkBlue;
+  font-size: 50px;
+  line-height: 62.11px;
+}
+
+// Header Style
+@mixin headerStyle {
+  @include flexItem();
+  justify-content: space-between;
+  padding: 48px, 96px, 48px, 96px;
+}
+// Nav style
+@mixin navStyle {
+  @include flexItem();
+  gap: 16px;
+}
+
+// HERO SECTION
+@mixin heroMain {
+  @include flexItem();
+  justify-content: space-between;
+  padding: 74px, 44px, 74px, 44px;
+}
