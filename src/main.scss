@@ -1,0 +1,17 @@
+@import './component/variable.scss';
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  width: 100%;
+overflow-x: hidden;
+  height: 100%;
+  font-family: $Poppins;
+}

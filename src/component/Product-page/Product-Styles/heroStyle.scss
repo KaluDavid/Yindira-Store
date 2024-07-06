@@ -1,0 +1,25 @@
+@import "/src/component/variable.scss";
+
+.heroMain {
+  @include heroMain();
+}
+
+.text {
+  @include divStyle();
+}
+
+.text h1 {
+  @include heading();
+}
+
+.text article {
+  @include article();
+}
+
+.text button {
+  @include shopNow();
+}
+
+.heroImage {
+  @include heroImage();
+}

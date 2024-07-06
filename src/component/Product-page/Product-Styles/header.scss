@@ -1,0 +1,26 @@
+@import "/src/component/variable.scss";
+
+// Header 
+header {
+  @include headerStyle();
+
+  // Logo
+  .logo {
+    @include logoStyle();
+  }
+
+  // Nav style
+  nav {
+    @include navStyle();
+
+    img {
+      @include iconStyle();
+    }
+  }
+}
+
+
+// HeroSection
+.heroMain{
+    
+}

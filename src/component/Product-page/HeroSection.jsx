@@ -1,11 +1,12 @@
 import React from "react";
-import heroImage from "./Product-images/Model_wearing_beautiful_shade_clothing-removebg-preview.png";
+import heroImage from "./Product-images/Model wearing beautiful shade clothing@2x.png";
+import './Product-Styles/heroStyle.scss';
 
 export default function HeroSection() {
   return (
     <>
-      <main>
-        <div>
+      <main className="heroMain">
+        <div  className="text">
           <h1>The perfect blend of dress are available at our stores.</h1>
           <article>
             "Elegance in every stitch: Transform your wardrobe with our
@@ -13,7 +14,7 @@ export default function HeroSection() {
           </article>
           <button>Shop now</button>
         </div>
-        <img src={heroImage} alt="Hero-image" />
+        <img src={heroImage} alt="Hero-image" className="heroImage" />
       </main>
     </>
   );
