@@ -1,0 +1,41 @@
+@import "/src/component/variable.scss";
+
+.mainCart {
+  @include mainCart();
+}
+
+.collectionNav {
+  @include collectionNav();
+}
+
+.cartNav {
+  @include cartNav();
+}
+
+.cartNav a {
+  color: $wheat;
+}
+.cartNav a:first-child {
+  color: $darkblack;
+}
+
+.search {
+  @include search();
+}
+
+input {
+  @include input();
+}
+
+input::placeholder{@include placeholder();
+
+}
+ 
+
+select{
+    @include select();
+
+}
+
+
+// Cart section
