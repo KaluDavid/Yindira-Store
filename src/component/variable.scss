@@ -34,6 +34,7 @@ $Poppins: "Poppins", sans-serif;
   @include flexItem();
   justify-content: space-between;
   padding: 2% 6%;
+  width: 100%;
 }
 // Nav
 @mixin navStyle {
