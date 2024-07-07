@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&display=swap");
 
+
 // COLORS
 $darkBlue: #012850;
 $white: #ffffff;
@@ -17,7 +18,7 @@ $Poppins: "Poppins", sans-serif;
 
 // HEADER STYLE
 
-// lOGO STYLE
+// lOGO
 @mixin logoStyle {
   font-family: $Rancho;
   color: $darkBlue;
@@ -26,13 +27,13 @@ $Poppins: "Poppins", sans-serif;
   font-weight: 400;
 }
 
-// Header Style
+// Header
 @mixin headerStyle {
   @include flexItem();
   justify-content: space-between;
   padding: 2% 6%;
 }
-// Nav style
+// Nav
 @mixin navStyle {
   @include flexItem();
   gap: 16px;
@@ -48,7 +49,7 @@ $Poppins: "Poppins", sans-serif;
 @mixin heroMain {
   @include flexItem();
   justify-content: space-between;
-  padding: 2% 3%;
+  padding: 0% 3%;
   background: $gray;
 }
 // text
@@ -82,11 +83,13 @@ $Poppins: "Poppins", sans-serif;
   gap: 10px;
   border-radius: 12px;
   font-size: 16px;
+  border: none;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
   background-color: $darkBlue;
   color: $white;
+  cursor: pointer;
 }
 
 // heroImage
@@ -98,21 +101,51 @@ $Poppins: "Poppins", sans-serif;
 // FOOTER
 @mixin footer {
   @include flexItem();
-  padding: 2% 6%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7% 3%;
   gap: 40px;
   background: $darkBlue;
-  color: $white
+  color: $white;
+  font-weight: 300;
 }
 
 @mixin section {
-  // gap: 36px;
-  justify-content: space-between;
+  gap: 36px;
   @include flexItem();
+  align-items: flex-start;
 }
 
-@mixin links{
-    @include flexItem();
-    gap:10px;
-    flex-direction: column;
-    gap: 10px;
-};
+@mixin colLink {
+  @include flexItem();
+  gap: 10px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+@mixin h4 {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+//LINK TAG <a>
+@mixin linkTag {
+  text-decoration: none;
+  white-space: nowrap;
+  color: $white;
+}
+
+// visa
+@mixin visa {
+  gap: 5px;
+  @include flexItem();
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+// SocialLink
+@mixin socialLinks {
+  gap: 16px;
+  padding-top: 8px;
+}

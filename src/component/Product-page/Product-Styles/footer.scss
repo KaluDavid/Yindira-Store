@@ -1,0 +1,48 @@
+@import "/src/component/variable.scss";
+
+footer {
+  @include footer();
+  
+
+}
+
+section {
+  @include section();
+}
+
+.links {
+  @include section();
+}
+
+.links div {
+  @include colLink();
+}
+
+a {
+  @include linkTag();
+}
+
+h3 {
+  @include logoStyle();
+  color: $white;
+  padding-bottom: 8px
+}
+
+h4 {
+    @include h4();
+}
+button {
+  @include shopNow();
+  border: 1px solid $white;
+  padding-top: 8px;
+
+}
+
+.visa{
+    @include visa();
+}
+
+
+.socialLinks{
+    @include socialLinks();
+}
