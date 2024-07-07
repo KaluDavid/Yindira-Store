@@ -18,7 +18,6 @@ $Poppins: "Poppins", sans-serif;
   align-items: center;
 }
 
-// HEADER STYLE
 
 // lOGO
 @mixin logoStyle {
@@ -29,56 +28,7 @@ $Poppins: "Poppins", sans-serif;
   font-weight: 400;
 }
 
-// Header
-@mixin headerStyle {
-  @include flexItem();
-  justify-content: space-between;
-  padding: 2% 6%;
-  width: 100%;
-}
-// Nav
-@mixin navStyle {
-  @include flexItem();
-  gap: 16px;
-}
 
-@mixin iconStyle {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-// HERO SECTION
-@mixin heroMain {
-  @include flexItem();
-  justify-content: space-between;
-  padding: 0% 3%;
-  background: $gray;
-}
-// text
-@mixin divStyle {
-  gap: 32px;
-  @include flexItem();
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-// heading
-@mixin heading {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 72px;
-  text-align: left;
-  color: $darkBlue;
-}
-
-// article
-@mixin article {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
-}
 
 // shop now button
 @mixin shopNow {
@@ -93,118 +43,4 @@ $Poppins: "Poppins", sans-serif;
   background-color: $darkBlue;
   color: $white;
   cursor: pointer;
-}
-
-// heroImage
-@mixin heroImage {
-  max-width: 100%;
-  height: 80vh;
-}
-
-// FOOTER
-@mixin footer {
-  @include flexItem();
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7% 3%;
-  gap: 40px;
-  background: $darkBlue;
-  color: $white;
-  font-weight: 300;
-}
-
-@mixin section {
-  gap: 36px;
-  @include flexItem();
-  align-items: flex-start;
-}
-
-@mixin colLink {
-  @include flexItem();
-  gap: 10px;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-@mixin h4 {
-  font-size: 20px;
-  white-space: nowrap;
-}
-
-//LINK TAG <a>
-@mixin linkTag {
-  text-decoration: none;
-  white-space: nowrap;
-  color: $white;
-}
-
-// visa
-@mixin visa {
-  gap: 5px;
-  @include flexItem();
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-// SocialLink
-@mixin socialLinks {
-  gap: 16px;
-  padding-top: 8px;
-}
-
-// CART STYLING
-@mixin mainCart {
-  @include flexItem();
-  gap: 40px;
-  flex-direction: column;
-  padding: 4% 3%;
-}
-
-@mixin collectionNav {
-  @include flexItem();
-  justify-content: space-between;
-  width: 100%;
-}
-
-@mixin cartNav {
-  gap: 9px;
-  @include flexItem();
-  font-weight: 500;
-}
-
-@mixin search {
-  @include flexItem();
-  gap: 9px;
-}
-
-@mixin input {
-  padding: 12px 24px 12px 24px;
-  gap: 10px;
-  border-radius: 100px;
-  border: 1px solid $lightgray;
-  opacity: 0px;
-}
-
-@mixin placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: left;
-}
-
-@mixin select {
-  padding: 6.5px 15px;
-  gap: 10px;
-  border-radius: 5px;
-  background: $darkBlue;
-  color: $white;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-@mixin cart-section {
-  margin: 4% 9%;
 }

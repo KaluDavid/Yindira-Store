@@ -1,5 +1,47 @@
 @import "/src/component/variable.scss";
 
+
+// HERO SECTION
+@mixin heroMain {
+  @include flexItem();
+  justify-content: space-between;
+  padding: 0% 3%;
+  background: $gray;
+}
+// text
+@mixin divStyle {
+  gap: 32px;
+  @include flexItem();
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+// heading
+@mixin heading {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: $darkBlue;
+}
+
+// article
+@mixin article {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+// heroImage
+@mixin heroImage {
+  max-width: 100%;
+  height: 80vh;
+}
+
+
+
+
 .heroMain {
   @include heroMain();
 }

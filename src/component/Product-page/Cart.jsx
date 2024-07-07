@@ -22,9 +22,8 @@ import rating2 from "./cart-images/rating2.png";
 import rating3 from "./cart-images/rating3.png";
 import rating4 from "./cart-images/rating4.png";
 
-
 export function Cart() {
-    const [cart, setCart] = useState([
+  const [cart, setCart] = useState([
     {
       id: 1,
       image: img1,
@@ -183,22 +182,25 @@ export function Cart() {
         <section className="cart-section">
           {cart.map((item) => {
             return (
-              <div key={item.id} >
+              <div key={item.id} className="product">
+                <img src={item.image} alt={item.productName} />
 
-
-                <div className="products" >
-                  <img src={item.image} alt={item.productName} />
-
+                <div className="productDetails">
                   <div>
-                    <div>
-                      <p>{item.productName}</p>
-                      <small>{item.productType}</small>
-                      <p>Price: ₦{item.price}</p>
-                    </div>
-                    <img src={item.rating} alt="" />
+                    <p>{item.productName}</p>
+                    <small>{item.productType}</small>
+                    <p>₦{item.price}</p>
                   </div>
+                  <img src={item.rating} alt="" className="ratings" />
                 </div>
 
+                <div className="buttons">
+                  <div>
+                    <button>-</button>
+                    <button>+</button>
+                  </div>
+                  <button>ADD TO CART</button>
+                </div>
               </div>
             );
           })}

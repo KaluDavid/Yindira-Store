@@ -1,5 +1,108 @@
 @import "/src/component/variable.scss";
 
+
+
+
+
+
+// CART STYLING
+@mixin mainCart {
+  @include flexItem();
+  gap: 40px;
+  flex-direction: column;
+  padding: 4% 3%;
+}
+
+@mixin collectionNav {
+  @include flexItem();
+  justify-content: space-between;
+  width: 100%;
+}
+
+@mixin cartNav {
+  gap: 9px;
+  @include flexItem();
+  font-weight: 500;
+}
+
+@mixin search {
+  @include flexItem();
+  gap: 9px;
+}
+
+@mixin input {
+  padding: 12px 24px 12px 24px;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid $lightgray;
+  opacity: 0px;
+}
+
+@mixin placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+@mixin select {
+  padding: 6.5px 15px;
+  gap: 10px;
+  border-radius: 5px;
+  background: $darkBlue;
+  color: $white;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+// Products
+@mixin cart-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@mixin productDetails {
+  @include flexItem();
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin productImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+@mixin ratings {
+  width: 100%;
+  object-fit: contain;
+}
+
+@mixin buttons {
+  @include flexItem();
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20%;
+}
+
+@mixin buttonsDiv {
+  @include flexItem();
+  gap: 0px;
+}
+@mixin buttonsButtons {
+  color: $darkblack;
+  background: $white;
+  border-radius: 0px;
+  padding: 5px 15px;
+  border: 1px solid $wheat;
+}
+
+
+
+// Implemented styling to tags
+
 .mainCart {
   @include mainCart();
 }
@@ -39,3 +142,27 @@ select{
 
 
 // Cart section
+.cart-section{
+  @include cart-section();
+}
+
+
+.productDetails{
+  @include productDetails();
+}
+
+.product img:first-child{
+  @include productImg();
+}
+
+.buttons{
+  @include buttons();
+}
+
+
+.buttons div{
+  @include buttonsDiv();
+}
+.buttons div button{
+  @include buttonsButtons();
+}

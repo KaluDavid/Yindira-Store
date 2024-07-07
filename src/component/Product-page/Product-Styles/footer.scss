@@ -1,5 +1,61 @@
 @import "/src/component/variable.scss";
 
+
+// FOOTER
+@mixin footer {
+  @include flexItem();
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7% 3%;
+  gap: 40px;
+  background: $darkBlue;
+  color: $white;
+  font-weight: 300;
+}
+
+@mixin section {
+  gap: 36px;
+  @include flexItem();
+  align-items: flex-start;
+}
+
+@mixin colLink {
+  @include flexItem();
+  gap: 10px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+@mixin h4 {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+//LINK TAG <a>
+@mixin linkTag {
+  text-decoration: none;
+  white-space: nowrap;
+  color: $white;
+}
+
+// visa
+@mixin visa {
+  gap: 5px;
+  @include flexItem();
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+// SocialLink
+@mixin socialLinks {
+  gap: 16px;
+  padding-top: 8px;
+}
+
+
+
+// Implemented styling to tags
 footer {
   @include footer();
   
