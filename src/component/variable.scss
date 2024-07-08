@@ -7,7 +7,7 @@ $gray: linear-gradient(178.51deg, #ddd8d5 69.44%, #e2e0e1 91.41%);
 $wheat: #3232324d;
 $darkblack: #323232;
 $lightgray: #e2e2e2;
-
+$veryLightBlue: #f1f0f0;
 // FONTS
 $Rancho: "Rancho", cursive;
 $Poppins: "Poppins", sans-serif;
@@ -18,7 +18,6 @@ $Poppins: "Poppins", sans-serif;
   align-items: center;
 }
 
-
 // lOGO
 @mixin logoStyle {
   font-family: $Rancho;
@@ -27,8 +26,6 @@ $Poppins: "Poppins", sans-serif;
   line-height: 62.11px;
   font-weight: 400;
 }
-
-
 
 // shop now button
 @mixin shopNow {

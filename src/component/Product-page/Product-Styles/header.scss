@@ -1,8 +1,6 @@
 @import "/src/component/variable.scss";
 
-
 // HEADER STYLE
-
 
 @mixin iconStyle {
   width: 100%;
@@ -10,12 +8,11 @@
   object-fit: contain;
 }
 
-
 // Header
 @mixin headerStyle {
   @include flexItem();
   justify-content: space-between;
-  padding: 2% 6%;
+  padding: 0% 6%;
   width: 100%;
 }
 // Nav
@@ -24,11 +21,9 @@
   gap: 16px;
 }
 
-
 // Implemented styling to tags
 
-
-// Header 
+// Header
 header {
   @include headerStyle();
 
@@ -46,5 +41,3 @@ header {
     }
   }
 }
-
-

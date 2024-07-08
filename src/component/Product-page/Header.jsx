@@ -2,17 +2,25 @@ import React from "react";
 import img from "./Product-images/MagnifyingGlass.png";
 import img2 from "./Product-images/UserCircle.png";
 import img3 from "./Product-images/ShoppingCart.png";
-import './Product-Styles/header.scss';
-
+import "./Product-Styles/header.scss";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
     <header>
+      <Link to="/">
       <h3 className="logo">yindira</h3>
+      </Link>
       <nav>
-        <img src={img} alt="MagnifyingGlass" />
+        <Link to="/">
+          <img src={img} alt="MagnifyingGlass" />
+        </Link>
+        <Link to="/Product">
         <img src={img2} alt="UserCircle" />
+        </Link>
+        <Link to="/productCart">
         <img src={img3} alt="ShoppingCart" />
+        </Link>
       </nav>
     </header>
   );

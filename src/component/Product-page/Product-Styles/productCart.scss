@@ -1,0 +1,104 @@
+@import "/src/component/variable.scss";
+
+$wine: #6e223c;
+$black: #15141a;
+$pink: #efc3c3;
+$cream: #dde0d3;
+
+.cartMain {
+  width: 100%;
+  background-color: $veryLightBlue;
+  padding: 30px 20px;
+  gap: 30px;
+  flex-direction: column;
+  display: flex;
+}
+
+@mixin pColor {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+@mixin allCart {
+  display: flex;
+  flex-direction: column;
+  @include cartStyle();
+}
+
+@mixin cartStyle {
+  background: #ffffff;
+  padding: 32px 30px;
+  gap: 32px;
+  border-radius: 12px;
+  box-shadow: 0px 11px 37.5px 0px #0000000a;
+}
+
+@mixin product {
+  display: flex;
+  flex-direction: column;
+  @include cartStyle();
+}
+
+@mixin myCart {
+  @include flexItem();
+  justify-content: space-between;
+}
+
+@mixin nav {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+// PRODUCT STYLE IMPLEMENTATION
+
+.product nav {
+  @include nav();
+
+  a {
+    color: #323232;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  div {
+    display: flex;
+    gap: 30px;
+  }
+}
+.wine {
+  background-color: $wine;
+  @include pColor();
+}
+.black {
+  background-color: $black;
+  @include pColor();
+}
+.pink {
+  background-color: $pink;
+  @include pColor();
+}
+.cream {
+  background-color: $cream;
+  @include pColor();
+}
+
+.allCart {
+  @include allCart();
+}
+
+.eachCart {
+  display: flex;
+}
+
+.myCart {
+  @include myCart();
+}
+
+.product {
+  @include product();
+}

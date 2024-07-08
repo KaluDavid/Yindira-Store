@@ -166,17 +166,9 @@ export function Cart() {
             <a href="#">Activewear</a>
           </nav>
 
-          <div className="search">
-            <input
-              type="search"
-              name="search"
-              id="search"
-              placeholder="search"
-            />
-            <select name="Sort" id="sort">
-              <option value="sort By">Sort by</option>
-            </select>
-          </div>
+          <select name="Sort" id="sort">
+            <option value="sort By">Sort by</option>
+          </select>
         </div>
 
         <section className="cart-section">
