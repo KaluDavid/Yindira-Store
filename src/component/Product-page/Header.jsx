@@ -15,7 +15,7 @@ export function Header() {
         <Link to="/">
           <img src={img} alt="MagnifyingGlass" />
         </Link>
-        <Link to="/Product">
+        <Link to="/checkOut">
         <img src={img2} alt="UserCircle" />
         </Link>
         <Link to="/productCart">
