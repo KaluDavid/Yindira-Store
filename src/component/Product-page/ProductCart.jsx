@@ -21,8 +21,6 @@ export function ProductCart() {
       color: "wine",
       tPrice: "",
       size: "M",
-
-
     },
     {
       id: 2,
@@ -34,7 +32,6 @@ export function ProductCart() {
       price: String("22,000"),
       tPrice: "",
       size: "M",
-
     },
     {
       id: 3,
@@ -56,8 +53,7 @@ export function ProductCart() {
       pColor: <div className="cream"></div>,
       price: String("25,000"),
       tPrice: "",
-      size: "S "
-
+      size: "S ",
     },
   ]);
 
@@ -83,47 +79,73 @@ export function ProductCart() {
           <section className="allCart">
             {pCart.map((cart) => {
               return (
-                <div key={cart.id}>
+                <div key={cart.id} className="carts">
                   <img src={cart.cartImg} alt={cart.name} />
 
-                  <div>
+                  <div className="cartDiv">
                     <div>
                       <p>{cart.name}</p>
-                      <small>{cart.type}</small>
-                      <p className="flexName">
-                        {cart.color} {cart.pColor}
-                      </p>
+                      <p>{cart.type}</p>
+                      <small className="color">
+                        <small>{cart.pColor}</small> {cart.color}
+                      </small>
                     </div>
 
-                    <b>
-                      {cart.size}
-                    </b>
+                    <b>{cart.size}</b>
                     <div className="buttons">
                       <div>
                         <button>-</button>
+
                         <button>+</button>
                       </div>
                     </div>
 
-                    <p>
-                    ₦{cart.price}
-                    </p>
+                    <p>₦{cart.price}</p>
 
-                    <p>
-                    ₦{cart.tPrice}
-
-                    </p>
+                    <p>₦{cart.tPrice}</p>
                   </div>
                 </div>
               );
             })}
           </section>
+
+          <section>
+            <h3>CART TOTAL</h3>
+            <div>
+              <p>Sub - total:</p>
+              <p>₦167,000</p>
+            </div>
+
+            <hr />
+
+            <div>
+              <p>Shipping:</p>
+              <small>
+                Enter your address to view shipping options
+                <b>Calculate shipping</b>
+              </small>
+            </div>
+            <hr />
+
+            <div>
+              <input type="search" name="coupon code" id="coupon" />
+              <button>APPLY</button>
+            </div>
+            <hr />
+
+            <div>
+              <p>Total:</p>
+              <p>₦167,000</p>
+            </div>
+
+            <button>PROCEED TO CHECKOUT</button>
+          </section>
         </div>
       </main>
 
-    <footer>
-      <Footer />
-    </footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

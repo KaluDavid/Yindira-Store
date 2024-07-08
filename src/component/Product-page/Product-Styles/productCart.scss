@@ -23,13 +23,13 @@ $cream: #dde0d3;
 @mixin allCart {
   display: flex;
   flex-direction: column;
-  @include cartStyle();
+  gap: 30px;
+  width: 100%;
 }
 
 @mixin cartStyle {
   background: #ffffff;
   padding: 32px 30px;
-  gap: 32px;
   border-radius: 12px;
   box-shadow: 0px 11px 37.5px 0px #0000000a;
 }
@@ -38,6 +38,36 @@ $cream: #dde0d3;
   display: flex;
   flex-direction: column;
   @include cartStyle();
+  gap: 32px;
+}
+
+@mixin cart {
+  @include cartStyle();
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+@mixin cartDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+@mixin cartDivP {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@mixin color {
+  @include flexItem();
+  gap: 5px;
+  padding-top: 20px;
+  font-weight: 14px;
 }
 
 @mixin myCart {
@@ -91,14 +121,42 @@ $cream: #dde0d3;
   @include allCart();
 }
 
-.eachCart {
-  display: flex;
-}
-
 .myCart {
   @include myCart();
 }
 
 .product {
   @include product();
+}
+
+.carts {
+  @include cart();
+}
+
+.cartDiv {
+  @include cartDiv();
+}
+
+.buttons {
+  margin: 0;
+}
+.cartDiv p {
+  @include cartDivP();
+}
+.cartDiv p:nth-child(2) {
+  font-weight: 400;
+  color: #323232;
+}
+.cartDiv p:nth-child(1) {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.color {
+  @include color();
+}
+
+.carts img {
+  width: 30% !important;
+  object-fit: contain;
 }
