@@ -109,11 +109,13 @@ export function ProductCart() {
             })}
           </section>
 
-          <section>
-            <h3>CART TOTAL</h3>
+          <section className="cartTotal">
+            <h4>CART TOTAL</h4>
             <div>
               <p>Sub - total:</p>
-              <p>₦167,000</p>
+              <p>
+                <b>₦</b>167,000
+              </p>
             </div>
 
             <hr />
@@ -122,30 +124,28 @@ export function ProductCart() {
               <p>Shipping:</p>
               <small>
                 Enter your address to view shipping options
-                <b>Calculate shipping</b>
+                <a href="">Calculate shipping</a>
               </small>
             </div>
             <hr />
 
-            <div>
-              <input type="search" name="coupon code" id="coupon" />
+            <aside>
+              <input type="search" name="coupon code" id="coupon" placeholder="Coupon Code"/>
               <button>APPLY</button>
-            </div>
+            </aside>
             <hr />
 
             <div>
               <p>Total:</p>
-              <p>₦167,000</p>
+              <b>₦167,000</b>
             </div>
 
-            <button>PROCEED TO CHECKOUT</button>
+            <button className="proceed">PROCEED TO CHECKOUT</button>
           </section>
         </div>
       </main>
 
-      <footer>
         <Footer />
-      </footer>
     </>
   );
 }
