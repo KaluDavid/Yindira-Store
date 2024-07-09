@@ -1,16 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import "./Product-Styles/productCart.scss";
-import { Link } from "react-router-dom";
-import { pCart } from "./ProductCart";
-
-
-
-
+import { Header } from "./Header";
+import { pCart } from './pCart'
 export function ProductCart() {
 
   return (
     <>
+    <Header />
       <main className="cartMain">
         <div className="myCart">
           <h2>My Cart</h2>
