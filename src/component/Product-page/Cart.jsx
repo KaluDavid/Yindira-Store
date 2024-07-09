@@ -5,6 +5,15 @@ import { Footer } from "./Footer";
 import { myCart } from "./MyCart";
 
 export function Cart() {
+  const [cartButton, setCartButton] = useState("ADD TO CART");
+
+  const handleClick = () => {
+    setCartButton("....");
+
+    setTimeout(() => {
+      setCartButton("ADDED");
+    }, 2000);
+  };
 
   return (
     <>
@@ -43,12 +52,15 @@ export function Cart() {
                     <button>-</button>
                     <button>+</button>
                   </div>
-                  <button id="addToCart">ADD TO CART</button>
+                  <button onClick={handleClick}>{cartButton} </button>
                 </div>
               </div>
             );
           })}
         </section>
+        <button id="addToCart" className="load">
+          LOAD MORE
+        </button>
       </main>
       <Footer />
     </>

@@ -1,16 +1,12 @@
 @import "/src/component/variable.scss";
 
-
-
-
-
-
 // CART STYLING
 @mixin mainCart {
   @include flexItem();
   gap: 40px;
   flex-direction: column;
   padding: 4% 3%;
+  background: $veryLightBlue;
 }
 
 @mixin collectionNav {
@@ -24,7 +20,6 @@
   @include flexItem();
   font-weight: 500;
 }
-
 
 @mixin placeholder {
   font-size: 14px;
@@ -87,12 +82,17 @@
   border: 1px solid $wheat;
 }
 
-
-
 // Implemented styling to tags
 
 .mainCart {
   @include mainCart();
+}
+
+.product {
+  background: none !important;
+  padding: 32px 30px;
+  border-radius: 12px;
+  box-shadow: none !important;
 }
 
 .collectionNav {
@@ -110,34 +110,43 @@
   color: $darkblack;
 }
 
-select{
-    @include select();
-
+select {
+  @include select();
 }
 
-
 // Cart section
-.cart-section{
+.cart-section {
   @include cart-section();
 }
 
-
-.productDetails{
+.productDetails {
   @include productDetails();
 }
 
-.product img:first-child{
+.product img:first-child {
   @include productImg();
 }
 
-.buttons{
+.buttons {
   @include buttons();
 }
 
-
-.buttons div{
+.buttons div {
   @include buttonsDiv();
 }
-.buttons div button{
+.buttons div button {
   @include buttonsButtons();
+}
+
+.load {
+  border: 2px solid #012850;
+  background: $veryLightBlue;
+  color: #012850;
+  font-weight: 700;
+}
+.load:hover {
+  border: none;
+  background: #012850;
+  color: $white;
+  font-weight: 700;
 }
