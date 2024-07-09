@@ -21,10 +21,10 @@ export function Cart() {
         <div className="collectionNav">
           <nav className="cartNav">
             <a href="#">Dresses</a>
-            <a href="#">Tops</a>
-            <a href="#">Buttons</a>
-            <a href="#">Outwear</a>
-            <a href="#">Activewear</a>
+            <a href="#" className="na">Tops</a>
+            <a href="#" className="na">Buttons</a>
+            <a href="#" className="na">Outwear</a>
+            <a href="#" className="na">Activewear</a>
           </nav>
 
           <select name="Sort" id="sort">

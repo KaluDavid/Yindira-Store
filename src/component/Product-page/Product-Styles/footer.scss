@@ -108,17 +108,25 @@ button {
   }
 }
 @media screen and (max-width: 500px) {
+  footer {
+    white-space: wrap;
+  }
   .yindira1 {
     display: block;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    white-space: nowrap;
-    button {
-      width: 24%;
+
+padding-top: 20px;   
+
+button {
+      white-space: nowrap;
+      width: 35%;
     }
   }
   .yindira2 {
     display: none !important;
   }
 }
+
+
