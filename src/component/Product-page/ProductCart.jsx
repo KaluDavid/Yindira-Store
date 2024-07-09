@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "./Product-Styles/productCart.scss";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
 import { Link } from "react-router-dom";
 import { pCart } from "./ProductCart";
 
@@ -13,7 +11,6 @@ export function ProductCart() {
 
   return (
     <>
-      <Header />
       <main className="cartMain">
         <div className="myCart">
           <h2>My Cart</h2>
@@ -99,7 +96,6 @@ export function ProductCart() {
         </div>
       </main>
 
-        <Footer />
     </>
   );
 }
