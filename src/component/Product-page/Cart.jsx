@@ -2,18 +2,9 @@ import React from "react";
 import "./Product-Styles/cart.scss";
 import { useState } from "react";
 import { Footer } from "./Footer";
-import { cart } from "./Cart";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-
+import { myCart } from "./MyCart";
 
 export function Cart() {
-const [cartButton, setCartButton] = useState()
-
-  function addToCart(){
-    const button = document.getElementById('addToCart');
-    button.innerHTML = 'Added'
-  };
 
   return (
     <>
@@ -33,7 +24,7 @@ const [cartButton, setCartButton] = useState()
         </div>
 
         <section className="cart-section">
-          {cart.map((item) => {
+          {myCart.map((item) => {
             return (
               <div key={item.id} className="product">
                 <img src={item.image} alt={item.productName} />
@@ -52,7 +43,7 @@ const [cartButton, setCartButton] = useState()
                     <button>-</button>
                     <button>+</button>
                   </div>
-                  <button id="addToCart" onClick="addToCart()">ADD TO CART</button>
+                  <button id="addToCart">ADD TO CART</button>
                 </div>
               </div>
             );

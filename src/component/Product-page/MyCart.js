@@ -20,7 +20,7 @@ import rating3 from "./cart-images/rating3.png";
 import rating4 from "./cart-images/rating4.png";
 
 
-export const cart = [
+export const myCart = [
     {
       id: 1,
       image: img1,

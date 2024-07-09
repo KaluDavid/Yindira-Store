@@ -9,7 +9,7 @@ import { CheckOut } from "./component/Product-page/CheckOut.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Product />,
+    element: <App />,
   },
   {
     path: "/productCart",
