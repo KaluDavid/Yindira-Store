@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Product-Styles/productCart.scss";
+import { CheckOut } from "./CheckOut";
 import "./Product-Styles/cartOverlay.scss";
 import { Header } from "./Header";
 import { pCart } from "./pCart";
