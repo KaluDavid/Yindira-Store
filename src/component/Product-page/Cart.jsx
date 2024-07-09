@@ -7,7 +7,11 @@ import { Link } from "react-router-dom";
 
 
 export function Cart() {
-  
+  function addToCart(){
+    const button = document.getElementById('addToCart');
+    button.innerHTML = 'Added'
+  };
+
   return (
     <>
       <main className="mainCart">
@@ -45,10 +49,7 @@ export function Cart() {
                     <button>-</button>
                     <button>+</button>
                   </div>
-                  <Link to="/productCart">
-                  <button>ADD TO CART</button>
-
-        </Link>
+                  <button className="addToCart" onClick="addToCart">ADD TO CART</button>
                 </div>
               </div>
             );
