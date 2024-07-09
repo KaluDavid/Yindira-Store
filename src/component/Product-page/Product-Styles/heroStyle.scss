@@ -7,6 +7,7 @@
   padding: 0% 3%;
   background: $gray;
 }
+
 // text
 @mixin divStyle {
   gap: 32px;
@@ -40,10 +41,27 @@
 
 .heroMain {
   @include heroMain();
+
+  @include sm{
+    align-items: center;
+    justify-content: center;
+    padding:0%;
+  }
 }
 
 .text {
   @include divStyle();
+
+  @include sm {
+    position: absolute;
+    width: Hug (278px)px;
+height: Hug (182.42px)px;
+top: 443px;
+left: 20.32px;
+gap: 16.71px;
+opacity: 0px;
+
+  }
 }
 
 .text h1 {
@@ -58,10 +76,16 @@
   @include shopNow();
 }
 
- button:hover {
+button:hover {
   background: #034488;
 }
 
 .heroImage {
   @include heroImage();
+  
+  @include sm{
+    object-fit: cover;
+    position: relative;
+    margin-right: 40%;
+  }
 }

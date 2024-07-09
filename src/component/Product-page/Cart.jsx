@@ -40,9 +40,9 @@ export function Cart() {
 
                 <div className="productDetails">
                   <div>
-                    <p>{item.productName}</p>
+                    <p><b>{item.productName}</b></p>
                     <small>{item.productType}</small>
-                    <p>₦{item.price}</p>
+                    <p><b> ₦{item.price}</b></p>
                   </div>
                   <img src={item.rating} alt="" className="ratings" />
                 </div>
