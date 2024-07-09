@@ -53,10 +53,13 @@
 }
 
 // Implemented styling to tags
+.yindira1 {
+  display: none;
+}
+
 footer {
   @include footer();
   overflow-x: hidden;
-
 }
 
 section {
@@ -101,6 +104,21 @@ button {
 
 @media screen and (max-width: 768px) {
   section {
-flex-wrap: wrap; 
- }
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .yindira1 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+    button {
+      width: 24%;
+    }
+  }
+  .yindira2 {
+    display: none !important;
+  }
 }

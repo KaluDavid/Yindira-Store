@@ -13,6 +13,35 @@ export function Footer() {
     <>
       <footer>
         <section>
+
+        <div className="yindira1">
+              <h4>NEW TO YINDIRA? </h4>
+              <article>
+                Sign up for exclusive offers, original stories, events and more.
+              </article>
+
+              <button>Sign Up →</button>
+
+              {/* social links */}
+              <section className="socialLinks">
+                <a href="#">
+                  <img src={social1} alt="linkedin" />
+                </a>
+                <a href="#">
+                  <img src={social2} alt="instagram" />
+                </a>
+                <a href="#">
+                  <img src={social3} alt="youtube" />
+                </a>
+                <a href="#">
+                  <img src={social4} alt="twitter" />
+                </a>
+                <a href="#">
+                  <img src={social5} alt="facebook" />
+                </a>
+              </section>
+            </div>
+
           <div>
             <h3 className="logo">yindira</h3>
             <article>
@@ -53,7 +82,7 @@ export function Footer() {
               <a href="#">Refund Policy</a>
             </div>
 
-            <div>
+            <div className="yindira2">
               <h4>NEW TO YINDIRA? </h4>
               <article>
                 Sign up for exclusive offers, original stories, events and more.
