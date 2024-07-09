@@ -46,3 +46,21 @@ header {
 .hide{
 cursor: pointer;
 }
+
+
+
+
+@media screen and (max-width: 375px) {
+header .logo{
+  font-size: 33.02px;
+font-weight: 400;
+line-height: 41.02px;
+text-align: left;
+
+}
+header img{
+  width: 20px;
+height: 20px;
+
+}
+}

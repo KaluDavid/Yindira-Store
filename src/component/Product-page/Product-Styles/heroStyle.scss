@@ -42,26 +42,15 @@
 .heroMain {
   @include heroMain();
 
-  @include sm{
+  @include sm {
     align-items: center;
     justify-content: center;
-    padding:0%;
+    padding: 0%;
   }
 }
 
 .text {
   @include divStyle();
-
-  @include sm {
-    position: absolute;
-    width: Hug (278px)px;
-height: Hug (182.42px)px;
-top: 443px;
-left: 20.32px;
-gap: 16.71px;
-opacity: 0px;
-
-  }
 }
 
 .text h1 {
@@ -82,10 +71,155 @@ button:hover {
 
 .heroImage {
   @include heroImage();
-  
-  @include sm{
+
+  // @include sm {
+  //   object-fit: cover;
+  //   position: relative;
+  //   margin-right: 40%;
+  // }
+}
+
+@media screen and (max-width: 1310px) {
+  .heroMain {
+    // flex-direction: column;
+  }
+
+  .text {
+    padding-top: 30px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .heroMain {
+    // flex-direction: column;
+    // height: 100vh;
+  }
+
+  // heroImage
+  .heroImage {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .text {
+    padding-top: 30px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    padding-top: 30px;
+    gap: 30px;
+    top: 40%;
+    width: 50%;
+    position: absolute;
+  }
+
+  .text h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    padding-top: 30px;
+    gap: 30px;
+    top: 35%;
+    width: 60%;
+    position: absolute;
+  }
+
+  .text h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  // heroImage
+  .heroImage {
     object-fit: cover;
-    position: relative;
-    margin-right: 40%;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .text {
+    padding-top: 30px;
+    gap: 15px;
+    top: 40%;
+    width: 60%;
+    position: absolute;
+  }
+
+  .text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  // heroImage
+  .heroImage {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .text {
+    padding-top: 30px;
+    gap: 15px;
+    top: 40%;
+    width: 70%;
+    position: absolute;
+  }
+
+  .text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .text {
+    padding-top: 30px;
+    gap: 15px;
+    top: 37%;
+    width: 80%;
+  }
+
+  .text h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text {
+    width: Hug (278px) px;
+    height: Hug (182.42px) px;
+    top: 343px;
+    left: 20.32px;
+    gap: 16.71px;
+    opacity: 0px;
+  }
+
+  .text h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .text article {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+  }
+  .text button {
+    font-size: 8.36px;
+    font-weight: 500;
+    line-height: 12.53px;
+    text-align: left;
+  }
+  .heroImage {
   }
 }
