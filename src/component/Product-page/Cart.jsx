@@ -50,6 +50,7 @@ export function Cart() {
                 <div className="buttons">
                   <div>
                     <button>-</button>
+                    <b>1</b>
                     <button>+</button>
                   </div>
                   <button onClick={handleClick} className="add">{cartButton} </button>

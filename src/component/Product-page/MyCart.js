@@ -26,7 +26,7 @@ export const myCart = [
       image: img1,
       productName: "Yindira floral",
       productType: "Maxi Fitted",
-      price: String("52, 000"),
+      price: String("52,000"),
       rating: rating1,
     },
     {
@@ -34,7 +34,7 @@ export const myCart = [
       image: img2,
       productName: "Lilly",
       productType: "Mini gown",
-      price: String("50, 000"),
+      price: String("50,000"),
       rating: rating2,
     },
     {
@@ -42,7 +42,7 @@ export const myCart = [
       image: img3,
       productName: "Benny",
       productType: "Pleated corset",
-      price: String("43, 000"),
+      price: String("43,000"),
       rating: rating3,
     },
     {
@@ -50,7 +50,7 @@ export const myCart = [
       image: img4,
       productName: "Ladily",
       productType: "Floral Maxi",
-      price: String("49, 000"),
+      price: String("49,000"),
       rating: rating4,
     },
     {
@@ -58,7 +58,7 @@ export const myCart = [
       image: img5,
       productName: "Soft blu",
       productType: "Sky corset",
-      price: String("40, 000"),
+      price: String("40,000"),
       rating: rating1,
     },
     {
@@ -66,7 +66,7 @@ export const myCart = [
       image: img6,
       productName: "Special one",
       productType: "Maxi special",
-      price: String("55, 000"),
+      price: String("55,000"),
       rating: rating2,
     },
     {
@@ -74,7 +74,7 @@ export const myCart = [
       image: img7,
       productName: "Lilly ",
       productType: "Mini gown",
-      price: String("50, 000"),
+      price: String("50,000"),
       rating: rating3,
     },
     {
@@ -82,7 +82,7 @@ export const myCart = [
       image: img8,
       productName: "Chommy",
       productType: "Knitted piece",
-      price: String("49, 000"),
+      price: String("49,000"),
       rating: rating4,
     },
     {
@@ -90,7 +90,7 @@ export const myCart = [
       image: img9,
       productName: "Tower",
       productType: "Petty straight",
-      price: String("44, 000"),
+      price: String("44,000"),
       rating: rating4,
     },
     {
@@ -98,7 +98,7 @@ export const myCart = [
       image: img10,
       productName: "Beach",
       productType: "Floral Maxi",
-      price: String("30, 000"),
+      price: String("30,000"),
       rating: rating4,
     },
     {
@@ -106,7 +106,7 @@ export const myCart = [
       image: img11,
       productName: "Bloomy",
       productType: "Dinner you",
-      price: String("60, 000"),
+      price: String("60,000"),
       rating: rating4,
     },
     {
@@ -114,7 +114,7 @@ export const myCart = [
       image: img12,
       productName: "Princess",
       productType: "Palace Maxi",
-      price: String("30, 000"),
+      price: String("30,000"),
       rating: rating4,
     },
     {
@@ -122,7 +122,7 @@ export const myCart = [
       image: img13,
       productName: "Whitey",
       productType: "Yindira Wit",
-      price: String("49, 000"),
+      price: String("49,000"),
       rating: rating4,
     },
     {
@@ -130,7 +130,7 @@ export const myCart = [
       image: img14,
       productName: "Signature",
       productType: "Flowery Shiff",
-      price: String("60, 000"),
+      price: String("60,000"),
       rating: rating4,
     },
     {
@@ -138,7 +138,7 @@ export const myCart = [
       image: img15,
       productName: "Reddy",
       productType: "Peppery Flo",
-      price: String("40, 000"),
+      price: String("40,000"),
       rating: rating4,
     },
     {
@@ -146,7 +146,7 @@ export const myCart = [
       image: img16,
       productName: "Fushion",
       productType: "Knitted Mini",
-      price: String("35, 000"),
+      price: String("35,000"),
       rating: rating4,
     },
   ];

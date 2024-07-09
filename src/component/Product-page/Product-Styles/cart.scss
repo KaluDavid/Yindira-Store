@@ -76,10 +76,12 @@
 }
 @mixin buttonsButtons {
   color: $darkblack;
-  background: $white;
+  background: none;
   border-radius: 0px;
   padding: 5px 15px;
-  border: 1px solid $wheat;
+  border: none;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 // Implemented styling to tags
@@ -157,8 +159,16 @@ select {
   .add {
     white-space: nowrap;
     padding: 9px 10px;
-
     font-size: 13px;
-    font-weight: 500
+    font-weight: 500;
+  }
+}
+
+
+@media screen and (max-width: 882px) {
+   .cart-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
