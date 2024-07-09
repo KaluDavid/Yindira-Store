@@ -2,12 +2,11 @@ import React from "react";
 import { useState } from "react";
 import "./Product-Styles/productCart.scss";
 import { Header } from "./Header";
-import { pCart } from './pCart'
+import { pCart } from "./pCart";
 export function ProductCart() {
-
   return (
     <>
-    <Header />
+      <Header />
       <main className="cartMain">
         <div className="myCart">
           <h2>My Cart</h2>
@@ -35,8 +34,9 @@ export function ProductCart() {
                       <p>{cart.name}</p>
                       <p>{cart.type}</p>
                       <small className="color">
-                        <small>{cart.pColor}</small> {cart.color}
+                        <small className="color-indicator" style={{ backgroundColor: cart.pColor }}></small> {cart.color}
                       </small>
+
                     </div>
 
                     <b>{cart.size}</b>
@@ -78,7 +78,12 @@ export function ProductCart() {
             <hr />
 
             <aside>
-              <input type="search" name="coupon code" id="coupon" placeholder="Coupon Code"/>
+              <input
+                type="search"
+                name="coupon code"
+                id="coupon"
+                placeholder="Coupon Code"
+              />
               <button>APPLY</button>
             </aside>
             <hr />
@@ -92,7 +97,6 @@ export function ProductCart() {
           </section>
         </div>
       </main>
-
     </>
   );
 }
