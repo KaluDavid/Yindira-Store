@@ -1,7 +1,7 @@
 @import "/src/component/variable.scss";
 
 .checkOut {
-  padding: 50px 10px 90px 30px;
+  padding: 50px 30px 90px 30px;
   background-color: $veryLightBlue;
   display: flex;
   flex-direction: column;
@@ -127,16 +127,36 @@ form label {
   border: 1px solid #d8d8d8;
   background-color: $veryLightBlue;
 }
-form input{
+form input {
   @include input();
   color: #a9a9a9;
 }
- form select{
-
-    @include input();
-    color: #a9a9a9;
- }
+form select {
+  @include input();
+  color: #a9a9a9;
+}
 textarea {
   @include input();
   padding: 0px;
+}
+
+@media screen and (max-width: 546px) {
+  .ship {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 425px) {
+  .ship {
+    flex-direction: column;
+    align-items: flex-start !important;
+    text-align: left;
+  }
+
+  .checkOut {
+    padding: 50px 15px 90px 15px;
+   
+  }
+  
 }

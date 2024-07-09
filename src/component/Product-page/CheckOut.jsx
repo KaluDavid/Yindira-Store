@@ -191,7 +191,7 @@ export function CheckOut() {
               </p>{" "}
             </div>
             <hr />
-            <div>
+            <div className="ship">
               <p>Shipping:</p>
               <small>Enter your address to view shipping options</small>
             </div>
