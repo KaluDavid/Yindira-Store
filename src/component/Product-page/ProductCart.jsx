@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Product-Styles/productCart.scss";
 import { Header } from "./Header";
 import { pCart } from "./pCart";
+import { Link } from "react-router-dom";
 
 
 export function ProductCart() {
@@ -95,7 +96,9 @@ export function ProductCart() {
               <b>₦167,000</b>
             </div>
 
+            <Link to="/checkOut" className="link">
             <button className="proceed">PROCEED TO CHECKOUT</button>
+            </Link>
           </section>
         </div>
       </main>

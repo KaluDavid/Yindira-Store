@@ -68,7 +68,6 @@ section {
 
 .links {
   @include section();
-  flex-wrap: wrap;
 }
 
 .links div {
@@ -104,6 +103,10 @@ button {
 
 @media screen and (max-width: 768px) {
   section {
+    flex-wrap: wrap;
+  }
+
+  .links {
     flex-wrap: wrap;
   }
 }
