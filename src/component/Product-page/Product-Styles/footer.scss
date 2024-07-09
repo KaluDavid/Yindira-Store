@@ -16,7 +16,6 @@
   gap: 36px;
   @include flexItem();
   align-items: flex-start;
-  // flex-wrap: wrap
 }
 
 @mixin colLink {
@@ -56,6 +55,8 @@
 // Implemented styling to tags
 footer {
   @include footer();
+  overflow-x: hidden;
+
 }
 
 section {
@@ -64,6 +65,7 @@ section {
 
 .links {
   @include section();
+  flex-wrap: wrap;
 }
 
 .links div {
@@ -97,6 +99,8 @@ button {
   @include socialLinks();
 }
 
-
-@media screen and (max-width: 1102px) {
+@media screen and (max-width: 768px) {
+  section {
+flex-wrap: wrap; 
+ }
 }

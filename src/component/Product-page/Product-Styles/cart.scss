@@ -86,6 +86,8 @@
 
 .mainCart {
   @include mainCart();
+
+  overflow-x: hidden;
 }
 
 .product {
@@ -149,4 +151,14 @@ select {
   background: #012850;
   color: $white;
   font-weight: 700;
+}
+
+@media screen and (max-width: 1078px) {
+  .add {
+    white-space: nowrap;
+    padding: 9px 10px;
+
+    font-size: 13px;
+    font-weight: 500
+  }
 }

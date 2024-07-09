@@ -52,7 +52,7 @@ export function Cart() {
                     <button>-</button>
                     <button>+</button>
                   </div>
-                  <button onClick={handleClick}>{cartButton} </button>
+                  <button onClick={handleClick} className="add">{cartButton} </button>
                 </div>
               </div>
             );
