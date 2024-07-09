@@ -1,9 +1,5 @@
 @import "/src/component/variable.scss";
 
-$wine: #6e223c;
-$black: #15141a;
-$pink: #efc3c3;
-$cream: #dde0d3;
 
 .cartMain {
   width: 100%;
@@ -14,11 +10,6 @@ $cream: #dde0d3;
   display: flex;
 }
 
-@mixin pColor {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-}
 
 @mixin allCart {
   display: flex;
@@ -149,22 +140,7 @@ $cream: #dde0d3;
     gap: 30px;
   }
 }
-.wine {
-  background-color: $wine;
-  @include pColor();
-}
-.black {
-  background-color: $black;
-  @include pColor();
-}
-.pink {
-  background-color: $pink;
-  @include pColor();
-}
-.cream {
-  background-color: $cream;
-  @include pColor();
-}
+
 
 .allCart {
   @include allCart();

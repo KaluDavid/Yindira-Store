@@ -3,59 +3,13 @@ import { useState } from "react";
 import "./Product-Styles/productCart.scss";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import cartImg1 from "./cart-images/img2.png";
-import cartImg2 from "./cart-images/cartImg2.png";
-import cartImg3 from "./cart-images/cartImg3.png";
-import cartImg4 from "./cart-images/cartImg4.png";
 import { Link } from "react-router-dom";
+import { pCart } from "./ProductCart";
+
+
+
 
 export function ProductCart() {
-  const [pCart, setPCart] = useState([
-    {
-      id: 1,
-      cartImg: cartImg1,
-      name: "Lilly",
-      type: "Mini bodycon",
-      price: String("50,000"),
-      pColor: <div className="wine"></div>,
-      color: "wine",
-      tPrice: "",
-      size: "M",
-    },
-    {
-      id: 2,
-      cartImg: cartImg2,
-      name: "Sculpter",
-      type: "Silk shapter",
-      color: "Black",
-      pColor: <div className="black"></div>,
-      price: String("22,000"),
-      tPrice: "",
-      size: "M",
-    },
-    {
-      id: 3,
-      cartImg: cartImg3,
-      name: "Candy",
-      type: "Signature Pose",
-      color: "Pink",
-      pColor: <div className="pink"></div>,
-      price: String("20,000"),
-      tPrice: "",
-      size: "40",
-    },
-    {
-      id: 4,
-      cartImg: cartImg4,
-      name: "Crochetelo",
-      type: "Knitted piece",
-      color: "Cream",
-      pColor: <div className="cream"></div>,
-      price: String("25,000"),
-      tPrice: "",
-      size: "S ",
-    },
-  ]);
 
   return (
     <>

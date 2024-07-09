@@ -1,12 +1,14 @@
 import React from "react";
 import heroImage from "./Product-images/Model wearing beautiful shade clothing@2x.png";
-import './Product-Styles/heroStyle.scss';
+import "./Product-Styles/heroStyle.scss";
+import { Header } from "./Header";
 
 export default function HeroSection() {
   return (
     <>
+      <Header />
       <main className="heroMain">
-        <div  className="text">
+        <div className="text">
           <h1>The perfect blend of dress are available at our stores.</h1>
           <article>
             "Elegance in every stitch: Transform your wardrobe with our
