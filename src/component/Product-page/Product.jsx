@@ -11,7 +11,7 @@ export function Product() {
       </div>
       
       <div>
-        {/* <Cart /> */}
+        <Cart />
       </div>
     </>
   );
